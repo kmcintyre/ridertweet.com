@@ -25,14 +25,14 @@
 <header>
 	<button class="fa fa-cog" name="config"></button>
 	<button class="fa fa-calendar" name="calendar"></button>	
-	<button class="fa fa-bar-chart" name="chart"></button>
+	<button class="fa fa-area-chart" name="chart"></button>
 	<button name="find"><span class="fa fa-keyboard-o"></span></button>
 	<button name="channel"><span class="fa fa-search"></span></button>		
 	<button name="meta"><span class="fa fa-star"></span><span class="fa fa-ban"></span></button>	
 	<button class="fa fa-home" name="home"></button>
 	<span class="fa fa-map-marker" id="geo"></span>	
-	<img src="script/img/bug.svg" id="bug"/>
-	
+	<img src="script/img/bug.svg" id="bug" class="toggle"/>
+	 	
 	<span id="announcer"></span>
 </header>
 <section id="calendar"></section>
@@ -43,21 +43,22 @@
 	<label class="cstm_label" for="streaming"></label>	
 	<label class="choice_label" for="players"><input type="checkbox" id="players" name="players" checked></label>	
 	
-	<hr/>
+	<hr id="effects"/>
 	
 	<label class="cstm_label" for="effects"></label>	
-	<label class="choice_label" for="titling"><input type="checkbox" id="titling" name="titling" checked></label>
-	<label class="choice_label" for="clean"><button id="clean">✗</button></label>
-	<label class="choice_label" for="debug"><button id="debug">⍝</button></label>
+	<label class="choice_label" for="titling"><button id="titling" class="fa"></button></label>
+	<label class="choice_label" for="clean"><button id="clean" class="fa fa-refresh"></button></label>
+	<label class="choice_label" for="debug"><button id="debug" class="fa fa-code"></button></label>
+	<label class="choice_label" for="sound"><button id="sound" class="fa fa-bell"></button></label>
 	
-	<hr/>
-	
-	<label class="cstm_label" for="icons"></label> 
-	<label class="choice_label" for="tiny_icons"><input type="radio" id="tiny_icons" name="icons" value="tiny" data-li-width="50"></label>
-	<label class="choice_label" for="small_icons"><input type="radio" id="small_icons" name="icons" value="small" data-li-width="75"></label>		
-	<label class="choice_label" for="medium_icons"><input type="radio" id="medium_icons" name="icons" value="medium" data-li-width="150" checked></label>		
-	<label class="choice_label" for="large_icons"><input type="radio" id="large_icons" name="icons" value="large" data-li-width="225"></label>	
-	<label class="choice_label" for="card_icons"><input type="radio" id="card_icons" name="icons" value="card" data-li-width="350"></label>
+	<hr id="icons"/>
+	<label class="cstm_label" for="icons"></label>
+	 
+	<label class="choice_label" for="tiny_icons"><input type="radio" id="tiny_icons" name="icons" value="tiny" data-li-width="64"></label>
+	<label class="choice_label" for="small_icons"><input type="radio" id="small_icons" name="icons" value="small" data-li-width="96"></label>		
+	<label class="choice_label" for="medium_icons"><input type="radio" id="medium_icons" name="icons" value="medium" data-li-width="128"></label>		
+	<label class="choice_label" for="large_icons"><input type="radio" id="large_icons" name="icons" value="large" data-li-width="256"></label>	
+	<label class="choice_label" for="card_icons"><input type="radio" id="card_icons" name="icons" value="card" data-li-width="312"></label>
 			
 	<hr/>
 	
@@ -68,9 +69,10 @@
 <section id="channel"></section>
 <section id="tweets"></section>
 <footer>
-	<button name="instagram"></button>
 	<button name="twitter"></button>
-	<button name="conversation"></button>		
+	<button name="conversation"></button>	
+	<button name="instagram"></button>
+	<button name="facebook"></button>		
 </footer>
 <script data-main="script/index_main" src="/script/require.js"></script>
 </body>
