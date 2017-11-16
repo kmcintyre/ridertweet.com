@@ -1,0 +1,6 @@
+script
+polymer
+build
+node_modules
+bower_components
+.project
